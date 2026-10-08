@@ -1,0 +1,121 @@
+# Cinema Ticket Booking System
+
+## Description
+
+A simple Java-based **Cinema Ticket Booking System** that calculates the total ticket cost, applies a discount based on the number of tickets, and displays the final booking bill.
+
+## Features
+
+* Stores movie name, ticket price, and number of tickets.
+* Uses a **parameterized constructor** to initialize ticket details.
+* Calculates the total ticket amount.
+* Provides a **10% discount** when 5 or more tickets are booked.
+* Calculates the final amount after discount.
+* Displays the complete booking bill with monetary values formatted to **two decimal places**.
+
+## Concepts Used
+
+* Class and Object
+* Data Members
+* Parameterized Constructor
+* Methods
+* `if-else` condition
+* `Scanner` for user input
+* `printf()` for formatted output
+* Arithmetic operations
+
+## Program Structure
+
+### `MovieTicket` Class
+
+Contains:
+
+* `movieName`
+* `ticketPrice`
+* `numberOfTickets`
+
+### Methods
+
+#### `calculateTotal()`
+
+Calculates:
+
+```text
+Total = Ticket Price × Number of Tickets
+```
+
+#### `calculateDiscount()`
+
+* If tickets ≥ 5 → 10% discount
+* Otherwise → No discount
+
+#### `calculateFinalAmount()`
+
+Calculates:
+
+```text
+Final Amount = Total Amount - Discount
+```
+
+#### `displayBill()`
+
+Displays:
+
+* Movie name
+* Ticket price
+* Number of tickets
+* Discount
+* Final amount
+
+## Sample Input
+
+```text
+Enter movie name: Avengers
+Enter ticket price: 250
+Enter number of tickets: 5
+```
+
+## Sample Output
+
+```text
+----- CINEMA TICKET BILL -----
+Movie Name      : Avengers
+Ticket Price    : 250.00
+Number of Tickets: 5
+Discount        : 125.00
+Final Amount    : 1125.00
+```
+
+## Discount Example
+
+For 5 tickets at ₹250 each:
+
+```text
+Total = 250 × 5
+      = ₹1250
+
+Discount = 10% of ₹1250
+         = ₹125
+
+Final Amount = ₹1250 - ₹125
+             = ₹1125
+```
+
+## How to Run
+
+1. Save the program as `Main.java`.
+2. Compile:
+
+```bash
+javac Main.java
+```
+
+3. Run:
+
+```bash
+java Main
+```
+
+## Conclusion
+
+This project demonstrates basic **Object-Oriented Programming (OOP)** concepts in Java, particularly **classes, objects, constructors, and methods**, through a practical cinema ticket booking example.
